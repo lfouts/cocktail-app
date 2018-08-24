@@ -21,7 +21,7 @@ const ratingsController= require('./controllers/ratings');
 const app = express();
 
 //Declaring Port
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // error handler
 app.use(function(err, req, res, next) {
