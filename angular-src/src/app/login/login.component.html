@@ -1,11 +1,24 @@
 <div class="container">
   <div *ngIf="user.id; else elseBlock">
     Hello, {{ user.user }}
-    <a href="/auth/logout" class="button" >Logout</a>
+    <a href="/auth/logout" class="button">Logout</a>
   </div>
 
   <ng-template #elseBlock>
-    <a href="/auth/facebook" class="card-link">sign in with facebook</a>
-    <a href="/auth/google" class="card-link">sign in with google</a>
+    <div class="shadow p-3 mb-5 bg-white rounded login-block">
+      <div class="login-inner-block">
+        <p class="login-form">
+          <a href="/auth/facebook">
+            <fa-icon class="login-button" [icon]="faFacebook"></fa-icon>acebook Sign-On
+          </a>
+        </p>
+        <p class="login-form">
+          <a href="/auth/google">
+            <fa-icon class="login-button" [icon]="faGoogle"></fa-icon>oogle Sign-On
+          </a>
+        </p>
+      </div>
+    </div>
   </ng-template>
+
 </div>

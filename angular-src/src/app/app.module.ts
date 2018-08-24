@@ -7,6 +7,8 @@ import { UserService } from  './user.service';
 import { HttpClientModule }    from '@angular/common/http';
 import { DrinkListComponent } from './drink-list/drink-list.component';
 import { DrinkService } from './drink.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { DrinkService } from './drink.service';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [UserService, DrinkService],
   bootstrap: [AppComponent]

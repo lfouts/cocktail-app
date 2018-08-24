@@ -1,0 +1,21 @@
+.login-button {
+  font-size: 50px;
+  margin: 5px;
+  margin-right: 1px;
+}
+
+.login-block {
+  margin-top: 100px;
+  height: 400px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-inner-block {
+  padding-top: 100px;
+}
+
+.login-form {
+  text-align: center;
+}
