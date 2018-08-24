@@ -1,0 +1,9 @@
+<div class="container">
+  <div *ngIf="user.id; else elseBlock">
+    Hello, {{ user.user }}
+  </div>
+  <ng-template #elseBlock>
+    <a href="/auth/facebook" class="card-link">sign in with facebook</a>
+    <a href="/auth/google" class="card-link">sign in with google</a>
+  </ng-template>
+</div>
