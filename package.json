@@ -23,7 +23,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "cd angular-src && node_modules/.bin/ng build && cd .. && nodemon app",
+    "start": "cd angular-src && npm install && node_modules/.bin/ng build && cd .. && nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
