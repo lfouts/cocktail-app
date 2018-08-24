@@ -7,6 +7,10 @@ module.exports = function(sequelize, DataTypes) {
     type: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   });
   User.hasMany(sequelize.models.Rating);

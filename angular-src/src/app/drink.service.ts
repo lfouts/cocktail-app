@@ -11,4 +11,7 @@ export class DrinkService {
   getDrinks() {
     return this.http.get('/drinks');
   }
+  createDrink(drink) {
+    return this.http.post('/drinks', drink);
+  }
 }

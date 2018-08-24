@@ -9,4 +9,11 @@ router.get('/', function(req, res, next) {
     .catch(error => res.status(400).send(error));
 });
 
+router.post('/', function(req, res, next) {
+  db.models.Drink.create( {
+    name: req.body.name,
+    description: req.body.description
+  }).then(drink => res.send(drink));
+})
+
 module.exports = router;

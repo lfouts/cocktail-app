@@ -1,7 +1,6 @@
 <div class="container">
-  <div *ngIf="user.id; else elseBlock">
-    Hello, {{ user.user }}
-    <a href="/auth/logout" class="button">Logout</a>
+  <div *ngIf="user && user.id; else elseBlock">
+    Hello, {{ user.name }}
   </div>
 
   <ng-template #elseBlock>
