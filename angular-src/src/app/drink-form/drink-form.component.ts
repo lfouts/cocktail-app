@@ -21,6 +21,7 @@ export class DrinkFormComponent implements OnInit {
   onSubmit() {
     this.DrinkService.createDrink(this.model).subscribe(drink => {
       console.log(drink);
+      this.model = new Drink ("", "");
     this.loadDrinks.emit();
     });
   }
