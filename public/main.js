@@ -278,7 +278,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div *ngIf=\"user.id; else elseBlock\">\n    Hello, {{ user.user }}\n  </div>\n  <ng-template #elseBlock>\n    <a href=\"/auth/facebook\" class=\"card-link\">sign in with facebook</a>\n    <a href=\"/auth/google\" class=\"card-link\">sign in with google</a>\n  </ng-template>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div *ngIf=\"user.id; else elseBlock\">\n    Hello, {{ user.user }}\n    <a href=\"/auth/logout\" class=\"button\" >Logout</a>\n  </div>\n\n  <ng-template #elseBlock>\n    <a href=\"/auth/facebook\" class=\"card-link\">sign in with facebook</a>\n    <a href=\"/auth/google\" class=\"card-link\">sign in with google</a>\n  </ng-template>\n</div>\n"
 
 /***/ }),
 
