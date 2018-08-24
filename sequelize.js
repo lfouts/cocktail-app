@@ -1,5 +1,10 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('cocktail_app',
+let sequelize;
+if (process.env.CLEARDB_DATABASE_URL){
+ sequelize = new Sequelize(process.env.CLEARDB_DATABASE_URL)
+}
+else {
+ sequelize = new Sequelize('cocktail_app',
 
 process.env.DB_USERNAME,
 process.env.DB_PASSWORD,
@@ -8,6 +13,7 @@ process.env.DB_PASSWORD,
   dialect: 'mysql',
   port: 3306
 });
+}
 
 sequelize
   .authenticate()
