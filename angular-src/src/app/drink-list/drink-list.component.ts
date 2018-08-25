@@ -27,6 +27,7 @@ export class DrinkListComponent implements OnInit {
   onChange(rating, drinkID) {
     this.RatingService.createRating(drinkID, rating).subscribe(rating => {
       console.log(rating);
+      this.loadDrinks();
     })
 
   }

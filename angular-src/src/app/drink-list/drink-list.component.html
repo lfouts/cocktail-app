@@ -20,6 +20,9 @@
         5
       </option>
     </select>
+    <p *ngIf="drink.Ratings[0]">
+      Rated: {{ drink.Ratings[0].starRating}}
+    </p>
   </div>
   <app-drink-form (loadDrinks) = "loadDrinks()"></app-drink-form>
 </div>
