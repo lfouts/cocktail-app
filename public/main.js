@@ -236,7 +236,7 @@ var DrinkFormComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".rating {\n  margin-top: 15px;\n}\n"
 
 /***/ }),
 
@@ -247,7 +247,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"container\">\n  <div *ngFor=\"let drink of drinks\">\n    <h2>{{ drink.name }}</h2>\n    <p>{{ drink.description }}</p>\n    <select #rating (change)= \"onChange(rating.value, drink.id)\">\n      <option value=\"1\">\n        1\n      </option>\n      <option value=\"2\">\n        2\n      </option>\n      <option value=\"3\">\n        3\n      </option>\n      <option value=\"4\">\n        4\n      </option>\n      <option value=\"5\">\n        5\n      </option>\n    </select>\n    <p *ngIf=\"drink.Ratings[0]\">\n      Rated: {{ drink.Ratings[0].starRating}}\n    </p>\n  </div>\n  <app-drink-form (loadDrinks) = \"loadDrinks()\"></app-drink-form>\n</div>\n"
+module.exports = "\n<div class=\"container\">\n  <div *ngFor=\"let drink of drinks\">\n    <h2>{{ drink.name }}</h2>\n    <p>{{ drink.description }}</p>\n    <select #rating (change)= \"onChange(rating.value, drink.id)\">\n      <option value=\"1\">\n        1\n      </option>\n      <option value=\"2\">\n        2\n      </option>\n      <option value=\"3\">\n        3\n      </option>\n      <option value=\"4\">\n        4\n      </option>\n      <option value=\"5\">\n        5\n      </option>\n    </select>\n    <p class=\"rating\" *ngIf=\"drink.Ratings[0]\">\n      Rated: {{ drink.Ratings[0].starRating}}\n    </p>\n  </div>\n  <app-drink-form (loadDrinks) = \"loadDrinks()\"></app-drink-form>\n</div>\n"
 
 /***/ }),
 
