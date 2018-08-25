@@ -48,7 +48,7 @@ module.exports = "/*!\n * Bootstrap v4.1.3 (https://getbootstrap.com/)\n * Copyr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\nbody {\n  background-image: url('alcohol-background-citrus.jpg');\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.container {\n  background-color: rgba(255, 255, 255, 0.7);\n}\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\nbody {\n  background-image: url('alcohol-background-citrus.jpg');\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.container {\n  background-color: rgba(255, 255, 255, 0.7);\n  margin-top: 50px;\n}\n"
 
 /***/ }),
 

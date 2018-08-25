@@ -388,7 +388,7 @@ var Drink = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".login-button {\n  font-size: 50px;\n  margin: 5px;\n  margin-right: 1px;\n}\n\n.login-block {\n  margin-top: 100px;\n  height: 400px;\n  width: 400px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.login-inner-block {\n  padding-top: 100px;\n}\n\n.login-form {\n  text-align: center;\n}\n"
+module.exports = ".login-button {\n  font-size: 50px;\n  margin: 5px;\n  margin-right: 1px;\n}\n\n.login-block {\n  margin-top: 100px;\n  height: 400px;\n  width: 400px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.login-inner-block {\n  padding-top: 100px;\n}\n\n.login-form {\n  text-align: center;\n}\n\n.greeting {\n  text-align: center;\n  font-size: 3em;\n}\n"
 
 /***/ }),
 
@@ -399,7 +399,7 @@ module.exports = ".login-button {\n  font-size: 50px;\n  margin: 5px;\n  margin-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <div *ngIf=\"user && user.id; else elseBlock\">\n    Hello, {{ user.name }}\n  </div>\n\n  <ng-template #elseBlock>\n    <div class=\"shadow p-3 mb-5 bg-white rounded login-block\">\n      <div class=\"login-inner-block\">\n        <p class=\"login-form\">\n          <a href=\"/auth/facebook\">\n            <fa-icon class=\"login-button\" [icon]=\"faFacebook\"></fa-icon>acebook Sign-On\n          </a>\n        </p>\n        <p class=\"login-form\">\n          <a href=\"/auth/google\">\n            <fa-icon class=\"login-button\" [icon]=\"faGoogle\"></fa-icon>oogle Sign-On\n          </a>\n        </p>\n      </div>\n    </div>\n  </ng-template>\n\n</div>\n"
+module.exports = "<div>\n  <div class=\"greeting\" *ngIf=\"user && user.id; else elseBlock\">\n    Hello, {{ user.name }}\n  </div>\n\n  <ng-template #elseBlock>\n    <div class=\"shadow p-3 mb-5 bg-white rounded login-block\">\n      <div class=\"login-inner-block\">\n        <p class=\"login-form\">\n          <a href=\"/auth/facebook\">\n            <fa-icon class=\"login-button\" [icon]=\"faFacebook\"></fa-icon>acebook Sign-On\n          </a>\n        </p>\n        <p class=\"login-form\">\n          <a href=\"/auth/google\">\n            <fa-icon class=\"login-button\" [icon]=\"faGoogle\"></fa-icon>oogle Sign-On\n          </a>\n        </p>\n      </div>\n    </div>\n  </ng-template>\n\n</div>\n"
 
 /***/ }),
 
