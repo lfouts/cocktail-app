@@ -399,7 +399,7 @@ module.exports = ".login-button {\n  font-size: 50px;\n  margin: 5px;\n  margin-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div *ngIf=\"user && user.id; else elseBlock\">\n    Hello, {{ user.name }}\n  </div>\n\n  <ng-template #elseBlock>\n    <div class=\"shadow p-3 mb-5 bg-white rounded login-block\">\n      <div class=\"login-inner-block\">\n        <p class=\"login-form\">\n          <a href=\"/auth/facebook\">\n            <fa-icon class=\"login-button\" [icon]=\"faFacebook\"></fa-icon>acebook Sign-On\n          </a>\n        </p>\n        <p class=\"login-form\">\n          <a href=\"/auth/google\">\n            <fa-icon class=\"login-button\" [icon]=\"faGoogle\"></fa-icon>oogle Sign-On\n          </a>\n        </p>\n      </div>\n    </div>\n  </ng-template>\n\n</div>\n"
+module.exports = "<div>\n  <div *ngIf=\"user && user.id; else elseBlock\">\n    Hello, {{ user.name }}\n  </div>\n\n  <ng-template #elseBlock>\n    <div class=\"shadow p-3 mb-5 bg-white rounded login-block\">\n      <div class=\"login-inner-block\">\n        <p class=\"login-form\">\n          <a href=\"/auth/facebook\">\n            <fa-icon class=\"login-button\" [icon]=\"faFacebook\"></fa-icon>acebook Sign-On\n          </a>\n        </p>\n        <p class=\"login-form\">\n          <a href=\"/auth/google\">\n            <fa-icon class=\"login-button\" [icon]=\"faGoogle\"></fa-icon>oogle Sign-On\n          </a>\n        </p>\n      </div>\n    </div>\n  </ng-template>\n\n</div>\n"
 
 /***/ }),
 
